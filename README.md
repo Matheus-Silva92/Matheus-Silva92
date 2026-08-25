@@ -27,8 +27,7 @@ Atualmente curso **Análise e Desenvolvimento de Sistemas (ADS)** e sigo aprofun
 - 🔌 APIs REST para comunicação entre sistemas
 - 🗄️ Sistemas integrados a bancos de dados relacionais
 - 📊 Sistemas de gerenciamento e controle
-- 💰 Soluções para gestão financeira
-- 🎟️ Sistemas de criação e gerenciamento de rifas
+- 📋 Sistemas de controle e gestão de processos
 
 Meu foco é construir aplicações funcionais e organizadas, voltadas a problemas reais — não apenas projetos de demonstração.
 
@@ -59,8 +58,6 @@ Meu foco é construir aplicações funcionais e organizadas, voltadas a problema
 **Ferramentas**
 
 ![Git](https://img.shields.io/badge/-Git-black?logo=git) ![GitHub](https://img.shields.io/badge/-GitHub-black?logo=github) ![VS Code](https://img.shields.io/badge/-VS%20Code-black?logo=visualstudiocode)
-
-> Nota técnica: mantive **APIs** e **REST** como uma prática/arquitetura aplicada com Node.js — e não como uma "tecnologia" isolada, já que API é um conceito de comunicação entre sistemas, não uma linguagem ou ferramenta em si.
 
 ---
 
