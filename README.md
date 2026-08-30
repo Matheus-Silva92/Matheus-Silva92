@@ -1,6 +1,6 @@
 <h1 align="center">Olá! Eu sou Matheus Silva 👋</h1>
 
-<h3 align="center">Desenvolvedor de Software | Web, APIs e Mobile</h3>
+<h3 align="center">Desenvolvedor de Software | Web, Back-end, APIs e Mobile</h3>
 
 <p align="center">
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" />
@@ -16,11 +16,11 @@
 
 ## 👨‍💻 Sobre mim
 
-Sou desenvolvedor de software com experiência prática no desenvolvimento de sistemas completos, atuando desde a construção de interfaces até o desenvolvimento de back-end, APIs e integração com bancos de dados.
+Sou desenvolvedor de software com experiência prática no desenvolvimento de sistemas completos, atuando no desenvolvimento de interfaces Web, back-end, APIs REST, bancos de dados e aplicações Mobile.
 
-Tenho experiência com desenvolvimento **Web, APIs e aplicações Mobile**, utilizando diferentes tecnologias de acordo com as necessidades de cada projeto.
+Tenho experiência com **JavaScript, TypeScript, PHP, Node.js, Flutter, Dart e MySQL**, desenvolvendo soluções completas que integram diferentes camadas de uma aplicação.
 
-Meu foco é transformar necessidades reais em sistemas funcionais, buscando desenvolver soluções organizadas, eficientes e fáceis de utilizar.
+Meu foco é transformar necessidades reais em sistemas funcionais, buscando criar soluções organizadas, eficientes e fáceis de utilizar.
 
 Atualmente curso **Análise e Desenvolvimento de Sistemas (ADS)** e continuo aprimorando meus conhecimentos por meio do desenvolvimento de projetos próprios e da resolução de problemas práticos.
 
@@ -31,15 +31,127 @@ Atualmente curso **Análise e Desenvolvimento de Sistemas (ADS)** e continuo apr
 | Categoria          | Tecnologias                       |
 | ------------------ | --------------------------------- |
 | **Linguagens**     | JavaScript, TypeScript, PHP, Dart |
-| **Back-end**       | Node.js, PHP, APIs REST           |
-| **Front-end**      | HTML5, CSS3, JavaScript           |
+| **Back-end**       | Node.js, Express, PHP, APIs REST  |
+| **Front-end Web**  | HTML5, CSS3, JavaScript           |
 | **Mobile**         | Flutter, Dart                     |
 | **Banco de dados** | MySQL                             |
+| **Autenticação**   | JWT, bcrypt, Google OAuth         |
 | **Ferramentas**    | Git, GitHub, VS Code              |
 
 ---
 
 ## 🚀 Projetos em destaque
+
+### 💰 Sistema de Gestão Financeira — Unic Serviços
+
+Sistema completo de gestão financeira desenvolvido para gerenciamento de operações financeiras, dividido em dois módulos independentes e integrado também a uma aplicação mobile em Flutter.
+
+O projeto possui uma arquitetura composta por aplicações Web, APIs REST, bancos de dados MySQL independentes e aplicativo Mobile.
+
+### 🏗️ Arquitetura
+
+```text
+Sistema de Gestão Financeira
+│
+├── 💳 Troca Contas
+│   ├── Aplicação Web
+│   ├── API Node.js / Express
+│   └── Banco MySQL próprio
+│
+├── 🧾 Troca Cheque
+│   ├── Aplicação Web
+│   ├── API Node.js / Express
+│   └── Banco MySQL próprio
+│
+└── 📱 Aplicativo Mobile
+    └── Flutter / Dart
+        ├── Troca Contas
+        └── Troca Cheque
+```
+
+O aplicativo mobile funciona como uma aplicação unificada, permitindo ao usuário acessar os dois módulos através de uma única experiência.
+
+A autenticação principal é realizada pelo backend do módulo **Troca Contas**, utilizando tokens JWT compartilhados pelo aplicativo para autenticar as requisições aos dois módulos.
+
+### 💳 Módulo Troca Contas
+
+Sistema para gerenciamento de operações financeiras e controle de clientes, parcelas e recebimentos.
+
+**Principais funcionalidades:**
+
+* Cadastro e gerenciamento de usuários
+* Cadastro e gerenciamento de clientes
+* Criação e gerenciamento de operações financeiras
+* Operações de empréstimo e venda parcelada
+* Controle de parcelas e vencimentos
+* Registro de pagamentos
+* Cálculo de juros
+* Cálculo de multas e mora
+* Dashboard com indicadores financeiros
+* Agenda de vencimentos
+* Relatórios
+* Gerenciamento de perfil
+* Sistema de planos
+* Recuperação de senha
+* Autenticação com email e senha
+* Autenticação com Google
+* API REST para comunicação entre frontend e backend
+
+**Stack:** Node.js • Express • JavaScript • MySQL • HTML5 • CSS3 • APIs REST • JWT
+
+### 🧾 Módulo Troca Cheque
+
+Sistema para gerenciamento de cheques pré-datados, permitindo controlar clientes, cheques, vencimentos, valores e operações realizadas.
+
+**Principais funcionalidades:**
+
+* Cadastro e gerenciamento de clientes
+* Cadastro de cheques
+* Controle de bancos, agência e conta
+* Cálculo de juros e valor líquido
+* Controle de vencimentos
+* Controle de status dos cheques
+* Dashboard financeiro
+* Alertas de vencimento
+* Relatórios por cliente e banco
+* Histórico de operações
+* Backup e restauração de dados
+* Integração com WhatsApp
+* Modo discreto para ocultação de valores
+* API REST
+* Autenticação baseada em JWT
+
+**Stack:** Node.js • Express • JavaScript • MySQL • HTML5 • CSS3 • APIs REST • JWT
+
+### 📱 Aplicativo Mobile
+
+Aplicativo desenvolvido em **Flutter e Dart**, reunindo os módulos Troca Contas e Troca Cheque em uma única aplicação.
+
+O aplicativo consome as APIs REST dos dois módulos e possui uma arquitetura organizada por módulos, com separação entre telas, modelos, serviços e componentes compartilhados.
+
+**Principais características:**
+
+* Login unificado
+* Cadastro de usuários
+* Login com Google
+* Seleção de módulo
+* Troca Contas
+* Troca Cheque
+* Dashboard financeiro
+* Gerenciamento de clientes
+* Gerenciamento de operações
+* Gerenciamento de parcelas
+* Gerenciamento de cheques
+* Relatórios
+* Perfil do usuário
+* Comunicação com APIs REST
+* Armazenamento seguro do token de autenticação
+* Notificações locais
+* Interface adaptada para dispositivos móveis
+
+**Stack:** Flutter • Dart • Dio • MySQL • Node.js • APIs REST • JWT
+
+---
 
 ### 🏭 Sistema de Gestão de Cortes
 
@@ -59,27 +171,6 @@ Sistema web desenvolvido para uma oficina de costura, com o objetivo de centrali
 * Compartilhamento de relatórios via WhatsApp
 
 **Stack:** PHP • MySQL • JavaScript • HTML5 • CSS3
-
----
-
-### 💰 Sistema de Gestão Financeira
-
-Sistema desenvolvido para gerenciamento de operações financeiras, estruturado com aplicação, API e banco de dados.
-
-**Principais funcionalidades:**
-
-* Cadastro e gerenciamento de usuários e clientes
-* Registro e controle de operações financeiras
-* Controle de pagamentos
-* Consultas e filtros de movimentações
-* Comunicação entre aplicação e back-end através de API
-
-**Módulos:**
-
-* 💳 **Troca de Cheques** — gerenciamento de operações envolvendo cheques
-* 📄 **Troca de Contas** — gerenciamento de operações envolvendo contas
-
-**Stack:** Node.js • TypeScript • JavaScript • MySQL • APIs REST
 
 ---
 
@@ -111,6 +202,8 @@ A formação acadêmica complementa a experiência prática adquirida através d
 ## 🎯 Objetivo profissional
 
 Busco uma oportunidade na área de **desenvolvimento de software**, especialmente em posições **Web, Back-end ou Full Stack**, onde eu possa contribuir com minha experiência prática, trabalhar em equipe, aprender com profissionais mais experientes e continuar evoluindo tecnicamente.
+
+Tenho interesse em atuar no desenvolvimento de aplicações completas, APIs, sistemas Web, bancos de dados e aplicações Mobile.
 
 ---
 
