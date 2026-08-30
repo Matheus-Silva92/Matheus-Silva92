@@ -153,24 +153,40 @@ O aplicativo consome as APIs REST dos dois módulos e possui uma arquitetura org
 
 ---
 
-### 🏭 Sistema de Gestão de Cortes
+### 🏭 Sistema de Gestão de Cortes — JEE Confecções
 
-Sistema web desenvolvido para uma oficina de costura, com o objetivo de centralizar o gerenciamento de clientes, cortes e acompanhamento das etapas de produção.
+Sistema desenvolvido para uma oficina de costura, com o objetivo de centralizar o gerenciamento de clientes, cortes e acompanhamento das etapas de produção. Possui uma aplicação Web (PHP) e um aplicativo Mobile (Flutter) que consome o mesmo backend PHP já existente, sem duplicar regras de negócio.
+
+### 🏗️ Arquitetura
+
+```text
+Sistema de Gestão de Cortes — JEE Confecções
+│
+├── 🌐 Aplicação Web
+│   ├── PHP (backend/API)
+│   ├── MySQL
+│   └── HTML5 / CSS3 / JavaScript
+│
+└── 📱 Aplicativo Mobile
+    └── Flutter / Dart
+        └── Consome o mesmo backend PHP da versão Web
+```
 
 **Principais funcionalidades:**
 
-* Cadastro e gerenciamento de clientes
+* Login e autenticação
+* Cadastro e gerenciamento de clientes (internos e externos)
 * Cadastro e gerenciamento de cortes
-* Controle de quantidade de peças
-* Controle de referências, tecidos e grades
-* Acompanhamento das etapas de produção
-* Filtros e consultas de registros
+* Controle de quantidade de peças, referências, tecidos e grades (tamanhos adulto e infantil)
+* Acompanhamento das etapas de produção (oficina, produção, lavanderia, revisão, entregue)
+* Consulta e filtros de registros
 * Edição e exclusão de cortes
-* Dashboard com indicadores de produção
+* Dashboard com indicadores e resumo de produção
 * Geração de relatórios em PDF
 * Compartilhamento de relatórios via WhatsApp
 
-**Stack:** PHP • MySQL • JavaScript • HTML5 • CSS3
+**Stack Web:** PHP • MySQL • JavaScript • HTML5 • CSS3
+**Stack Mobile:** Flutter • Dart • HTTP • Shared Preferences • fl_chart
 
 ---
 
